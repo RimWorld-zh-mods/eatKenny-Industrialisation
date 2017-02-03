@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <!-- ========================= Work tables ==========================-->
+
+ <ThingDef ParentName="BuildingBase">
+    <DefName>ConcreteMixer</DefName>
+    <label>concrete mixer</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A concrete mixer.</Description>
+<graphicData>
+    <texPath>ConcreteMixer</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+   <drawSize>(2,2)</drawSize>
+</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+    <CostList>
+      <Steel>100</Steel>
+      <Component>2</Component>
+    </CostList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <UseHitPoints>True</UseHitPoints>
+    <rotatable>True</rotatable>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <Size>(2,2)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>Impassable</Passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <recipes>
+      <li>MixConcrete</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites><li>ConcreteProduction</li></researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <DefName>EAF</DefName>
+    <label>electric arc furnace</label>
+    <ThingClass>Building_WorkTable_HeatPush</ThingClass>
+    <Description>A electric arc furnace for steel production, efficient but very power hungry.</Description>
+<graphicData>
+    <texPath>EAF</texPath>
+    <graphicClass>Graphic_Multi</graphicClass>
+<drawSize>(3,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+</graphicData>
+    <constructEffect>ConstructMetal</constructEffect>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.9</fillPercent>
+    <CostList>
+      <Steel>600</Steel>
+      <Component>10</Component>
+    </CostList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <UseHitPoints>True</UseHitPoints>
+    <rotatable>True</rotatable>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <Size>(3,3)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>Impassable</Passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <recipes>
+      <li>MakeSteelxEAF</li>
+      <li>ExtractMetalFromSlagEAF</li>
+      <li>SmeltWeaponEAF</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>3600</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>24</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>1</heatPerTickWhileWorking>   
+    </building>
+    <staticSunShadowHeight>1</staticSunShadowHeight>
+    <researchPrerequisites><li>ElectricSmelting</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <DefName>DeepMine</DefName>
+    <label>deep mine</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>You can mining several kinds of resources from deep mine, it can only be built on a mining hole. (order a plasma drilling from skydriller, it will make a mining hole at drilling spot.)</Description>
+<graphicData>
+    <texPath>DeepMine</texPath>
+    <graphicClass>Graphic_Multi</graphicClass>
+<drawSize>(5,5)</drawSize>
+</graphicData>
+    <constructEffect>ConstructMetal</constructEffect>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.4</fillPercent>
+    <CostList>
+      <Steelx>850</Steelx>
+      <Component>20</Component>
+    </CostList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <UseHitPoints>True</UseHitPoints>
+    <rotatable>True</rotatable>
+    <statBases>
+      <WorkToMake>8500</WorkToMake>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <Size>(5,5)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>Industrialisation.PlaceWorker_OnMiningHole</li>
+    </placeWorkers>
+    <recipes>
+      <li>MiningDeepSteel</li>
+      <li>MiningDeepCopperOre</li>
+      <li>MiningDeepAluminiumOre</li>
+      <li>MiningDeepUraniumOre</li>
+      <li>MiningDeepPlasteel</li>
+      <li>MiningDeepSilverOre</li>
+      <li>MiningDeepGoldOre</li>
+      <li>MiningSandstone</li>
+      <li>MiningGranite</li>
+      <li>MiningLimestone</li>
+      <li>MiningSlate</li>
+      <li>MiningMarble</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>false</startElectricalFires>
+        <basePowerConsumption>3600</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites><li>DeepDrilling</li></researchPrerequisites>
+  </ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+		
+<defName>PlasmaDrillDeployed</defName>
+				
+<label>drilling spot</label>
+		
+<thingClass>Industrialisation.Building_PlasmaDrillDeployed</thingClass>
+      
+<graphicData>   
+<texPath>Inv</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<altitudeLayer>TerrainScatter</altitudeLayer>
+<building>
+<isEdifice>false</isEdifice>
+</building>
+<passability>PassThroughOnly</passability>
+		
+<useHitPoints>false</useHitPoints>
+	
+<selectable>false</selectable>
+		
+<tickerType>Normal</tickerType>
+		
+<description></description>
+		
+<size>(1,1)</size>
+	 
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+		
+<defName>PlasmaDrillAction</defName>
+			
+<label>plasma drill in action</label>
+		
+<thingClass>Industrialisation.Building_PlasmaDrillAction</thingClass>
+ 
+<graphicData>        
+<texPath>Inv</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<altitudeLayer>TerrainScatter</altitudeLayer>
+<building>
+<isEdifice>false</isEdifice>
+</building>
+<pathCost>15</pathCost>
+<passability>PassThroughOnly</passability>
+		
+<useHitPoints>false</useHitPoints>
+	
+<selectable>false</selectable>
+		
+<tickerType>Normal</tickerType>
+		
+<description></description>
+		
+<size>(3,3)</size>
+	
+    <comps>
+        <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>2800</heatPerSecond>
+      </li>
+    </comps> 
+</ThingDef>
+
+</ThingDefs>

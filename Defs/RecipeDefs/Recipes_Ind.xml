@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+  <RecipeDef>
+    <defName>MixConcrete</defName>
+    <label>mix concrete</label>
+    <description>turn stone chunks into concrete.</description>
+    <jobString>Mixing concrete.</jobString>
+    <workAmount>1600</workAmount>
+    <effectWorking>CutStone</effectWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+	<li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <Concrete>6</Concrete>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractMetalFromSlagEAF</defName>
+    <label>smelt metal from slag</label>
+    <description>Use electric arc furnace to separate useful metal from slag chunks.</description>
+    <jobString>Smelting metal from slag.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkSlagSteel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ChunkSlagSteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>SmeltWeaponEAF</defName>
+    <label>smelt metal from weapon</label>
+    <description>Use heat and strong electromagnets to separate useful metal from weapons.</description>
+    <jobString>Smelting metal from weapon.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+ <RecipeDef>
+    <defName>MakeSteelxEAF</defName>
+    <label>making high-grade steel</label>
+    <description>making high-grade steel from steel, using an electric arc furnace.</description>
+    <jobString>Making high-grade steel from steel.</jobString>
+    <workAmount>1600</workAmount>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+<ingredients>
+     <li>
+        <filter>
+          <thingDefs>
+	<li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steelx>65</Steelx>
+    </products>
+    <fixedIngredientFilter>
+          <thingDefs>
+	<li>Steel</li>
+          </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningDeepSteel</defName>
+    <label>mining deep compacted steel</label>
+    <description>mining deep compacted steel.</description>
+    <jobString>Mining deep compacted steel.</jobString>
+    <workAmount>2000</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <Steel>33</Steel>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningDeepCopperOre</defName>
+    <label>mining deep copper ore</label>
+    <description>mining deep copper ore.</description>
+    <jobString>Mining deep copper ore.</jobString>
+    <workAmount>2000</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <Copper>9</Copper>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningDeepAluminiumOre</defName>
+    <label>mining deep aluminium ore</label>
+    <description>mining deep aluminium ore.</description>
+    <jobString>Mining deep aluminium ore.</jobString>
+    <workAmount>2000</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <Aluminium>33</Aluminium>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningDeepUraniumOre</defName>
+    <label>mining deep uranium ore</label>
+    <description>mining deep uranium ore.</description>
+    <jobString>Mining deep uranium ore.</jobString>
+    <workAmount>2400</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <Uranium>6</Uranium>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningDeepPlasteel</defName>
+    <label>mining deep compacted plasteel</label>
+    <description>mining deep compacted plasteel.</description>
+    <jobString>Mining deep compacted plasteel.</jobString>
+    <workAmount>3000</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <Plasteel>2</Plasteel>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningDeepSilverOre</defName>
+    <label>mining deep silver ore</label>
+    <description>mining deep silver ore.</description>
+    <jobString>Mining deep silver ore.</jobString>
+    <workAmount>2000</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <Silver>40</Silver>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningDeepGoldOre</defName>
+    <label>mining deep gold ore</label>
+    <description>mining deep gold ore.</description>
+    <jobString>Mining deep gold ore.</jobString>
+    <workAmount>2000</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <Gold>2</Gold>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningSandstone</defName>
+    <label>mining sandstone</label>
+    <description>mining sandstone.</description>
+    <jobString>Mining sandstone.</jobString>
+    <workAmount>800</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <ChunkSandstone>1</ChunkSandstone>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningGranite</defName>
+    <label>mining granite</label>
+    <description>mining granite.</description>
+    <jobString>Mining granite.</jobString>
+    <workAmount>1000</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <ChunkGranite>1</ChunkGranite>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningLimestone</defName>
+    <label>mining limestone</label>
+    <description>mining limestone.</description>
+    <jobString>Mining limestone.</jobString>
+    <workAmount>800</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <ChunkLimestone>1</ChunkLimestone>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningSlate</defName>
+    <label>mining slate</label>
+    <description>mining slate.</description>
+    <jobString>Mining slate.</jobString>
+    <workAmount>800</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <ChunkSlate>1</ChunkSlate>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MiningMarble</defName>
+    <label>mining marble</label>
+    <description>mining marble.</description>
+    <jobString>Mining marble.</jobString>
+    <workAmount>800</workAmount>
+    <efficiencyStat>MiningSpeed</efficiencyStat>
+    <effectWorking>CutStone</effectWorking>
+    <workSkillLearnFactor>0.2</workSkillLearnFactor>
+    <products>
+      <ChunkMarble>1</ChunkMarble>
+    </products>
+<workSkill>Mining</workSkill>
+  </RecipeDef>
+
+</RecipeDefs>

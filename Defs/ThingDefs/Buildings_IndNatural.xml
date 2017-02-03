@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingNaturalBase" Abstract="True">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshOnly</drawerType>
+    <filthLeaving>RockRubble</filthLeaving>
+  </ThingDef>
+
+<ThingDef ParentName="BuildingNaturalBase">
+    <category>Ethereal</category>
+    <label>mining hole</label>
+    <defName>MiningHole</defName>
+    <thingClass>Thing</thingClass>
+<graphicData>
+    <texPath>MH</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>Transparent</shaderType>
+   <drawSize>(3,3)</drawSize>
+</graphicData>
+    <altitudeLayer>Floor</altitudeLayer>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Never</tickerType>
+    <selectable>true</selectable>
+    <description>A mining hole.</description>
+    <size>(3,3)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+  </ThingDef>
+
+   <ThingDef Name="RockBase" ParentName="BuildingNaturalBase" Abstract="True" >
+    <thingClass>Mineable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/Rock_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <neverMultiSelect>true</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <saveCompressible>true</saveCompressible>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <mineable>true</mineable>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <isInert>true</isInert>
+      <isNaturalRock>true</isNaturalRock>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <deconstructible>false</deconstructible>
+    </building>
+  </ThingDef>
+
+  <!--============================ Resource rocks ===============================--> 
+
+  <ThingDef ParentName="RockBase">
+    <defName>MineableCopper</defName>
+    <label>copper ore</label>
+<graphicData>
+    <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+    <Color>((90,130,110)</Color>
+    <ColorTwo>(160,115,45)</ColorTwo>
+</graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>The remains of some ancient, collapsed structure. Rich in copper.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Copper</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>0.15</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>7</min>
+        <max>14</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="RockBase">
+    <defName>MineableAluminium</defName>
+    <label>compacted aluminium</label>
+<graphicData>
+    <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+    <Color>(124,124,110)</Color>
+    <ColorTwo>(175,175,165)</ColorTwo>
+</graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>The remains of some ancient, collapsed structure. Rich in aluminium.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Aluminium</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>0.2</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>9</min>
+        <max>18</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+</ThingDefs>

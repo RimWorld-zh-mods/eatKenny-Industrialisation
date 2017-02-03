@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>ConcreteProduction</defName>
+		<label>concrete production</label>
+		<description>Allows you to produce concrete.</description>
+		<baseCost>600</baseCost>
+                <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Stonecutting</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>IndustrialBatteries</defName>
+		<label>industrial batteries</label>
+		<description>Allows you to build industrial batteries.</description>
+		<baseCost>800</baseCost>
+                <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Batteries</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>NuclearPower</defName>
+		<label>nuclear power</label>
+		<description>Allows you to build nuclear power plant.</description>
+		<baseCost>5000</baseCost>
+                <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>
