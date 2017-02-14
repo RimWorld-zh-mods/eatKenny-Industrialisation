@@ -22,8 +22,8 @@ New power building:
  - industrial battery
  - neclear power plant
 
- New trader ship:
-  - deep space mining ship
+New trader ship:
+ - deep space mining ship
 
 Tips: To build a deep mine, you must buy a Skydriller to create a mine hole.  
 (The Skydriller looks like a walkie-talkie, just use it like a grenade - hit the grand, than the plasma beam will make a mine hole.)
