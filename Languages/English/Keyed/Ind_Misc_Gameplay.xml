@@ -3,10 +3,10 @@
 
   <!-- Various -->
 
-<PlasmaDrillingOrderSend>Drilling order has been send to skydriller.</PlasmaDrillingOrderSend>
-<LowOrbitPlasmaDrillApproaching>Skydriller approaching...</LowOrbitPlasmaDrillApproaching>
-<InitiatingPlasmaDrilling>CAUTION: Skydriller in position, initiating plasma drilling.</InitiatingPlasmaDrilling>
-<PlasmaDrillingComplete>Drilling order complete.</PlasmaDrillingComplete>
-<MustPlaceOnMiningHole>Must be placed direct on a mining hole.</MustPlaceOnMiningHole>
+  <Ind_PlasmaDrillingOrderSend>Drilling order has been send to skydriller.</Ind_PlasmaDrillingOrderSend>
+  <Ind_LowOrbitPlasmaDrillApproaching>Skydriller approaching...</Ind_LowOrbitPlasmaDrillApproaching>
+  <Ind_InitiatingPlasmaDrilling>CAUTION: Skydriller in position, initiating plasma drilling.</Ind_InitiatingPlasmaDrilling>
+  <Ind_PlasmaDrillingComplete>Drilling order complete.</Ind_PlasmaDrillingComplete>
+  <Ind_MustPlaceOnMiningHole>Must be placed direct on a mining hole.</Ind_MustPlaceOnMiningHole>
   
 </LanguageData>

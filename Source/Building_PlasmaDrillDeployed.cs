@@ -9,10 +9,10 @@ namespace Industrialisation
         public int waitticksRemaining = 0;
         public int waittickAmountToGen = 0;
 
-        public override void SpawnSetup()
+        public override void SpawnSetup(Map map)
         {
-            base.SpawnSetup();
-            Messages.Message(Translator.Translate("PlasmaDrillingOrderSend"), MessageSound.Standard);
+            base.SpawnSetup(map);
+            Messages.Message("Ind_PlasmaDrillingOrderSend".Translate(), MessageSound.Standard);
             this.waittickAmountToGen = this.randomWaitticks();
             this.waitticksRemaining = this.waittickAmountToGen;
         }
@@ -29,15 +29,15 @@ namespace Industrialisation
             
             if (waitticksRemaining == 900)
             {
-                Messages.Message(Translator.Translate("LowOrbitPlasmaDrillApproaching"), MessageSound.Standard);
+                Messages.Message("Ind_LowOrbitPlasmaDrillApproaching".Translate(), MessageSound.Standard);
             }
             if (waitticksRemaining == 180)
             {
-                Messages.Message(Translator.Translate("InitiatingPlasmaDrilling"), MessageSound.SeriousAlert);
+                Messages.Message("Ind_InitiatingPlasmaDrilling".Translate(), MessageSound.SeriousAlert);
             }
             if (waitticksRemaining == 0)
             {
-                GenSpawn.Spawn(ThingDef.Named("PlasmaDrillAction"), this.Position);
+                GenSpawn.Spawn(ThingDef.Named("Ind_PlasmaDrillAction"), this.Position, base.Map);
                 ((Thing)this).Destroy((DestroyMode)0);
             }
         }

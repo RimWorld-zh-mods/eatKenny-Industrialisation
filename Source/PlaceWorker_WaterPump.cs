@@ -13,7 +13,7 @@ namespace Industrialisation
     {
         public const int minDistanceBetweenTwoWaterPumps = 25;
 
-        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot)
+        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Thing thingToIgnore = null)
         {
             List<Thing> WaterPumpList = Find.ListerThings.ThingsOfDef(Util_Industrialisation.WaterPumpDef);
             List<Thing> WaterPumpBlueprintList = Find.ListerThings.ThingsOfDef(Util_Industrialisation.WaterPumpDef.blueprintDef);

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="Ind_FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>135</WorkToBuild>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <!-- ================================== -->
+
+  <TerrainDef ParentName="Ind_FloorBase">
+    <DefName>Ind_CopperTile</DefName>
+    <label>copper tile</label>
+    <RenderPrecedence>240</RenderPrecedence>
+    <Description>Beautiful copper tiles.</Description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(0.35, 0.45, 0.4)</color>
+    <statBases>
+      <Beauty>3</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+    </statBases>
+    <CostList>
+      <Ind_Copper>5</Ind_Copper>
+    </CostList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotkey>Misc1</designationHotkey>
+  </TerrainDef>
+
+</TerrainDefs>

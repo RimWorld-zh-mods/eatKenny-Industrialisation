@@ -18,12 +18,12 @@ namespace Industrialisation
         public int drillticksRemaining = 0;
         public int drilltickAmountToGen = 0;
         public Skydriller_PlasmaBeam skydrillerEffect;
-        private static readonly SoundDef PD = SoundDef.Named("PD");
-        private static readonly SoundDef PDF = SoundDef.Named("PDF");
+        private static readonly SoundDef PlasmaDrill = SoundDef.Named("Ind_PlasmaDrill");
+        private static readonly SoundDef PlasmaDrillFire = SoundDef.Named("Ind_PlasmaDrillFire");
 
-        public override void SpawnSetup()
+        public override void SpawnSetup(Map map)
         {
-            base.SpawnSetup();
+            base.SpawnSetup(map);
             this.drilltickAmountToGen = this.randomDrillticks();
             this.drillticksRemaining = this.drilltickAmountToGen;
         }
@@ -42,23 +42,23 @@ namespace Industrialisation
            
             if (Burnticks == 0)
             {
-                skydrillerEffect = new Skydriller_PlasmaBeam(this.Position);
-                Find.WeatherManager.eventHandler.AddEvent(skydrillerEffect);
+                skydrillerEffect = new Skydriller_PlasmaBeam(base.Map, this.Position);
+                base.Map.weatherManager.eventHandler.AddEvent(skydrillerEffect);
                 Burnticks = 4;
             }
 
             if (Burnticks2 == 0)
             {
-                MoteMaker.MakeStaticMote(base.Position, ThingDefOf.Mote_ShotFlash, 9f);
-                GenExplosion.DoExplosion(base.Position, 1, DamageDefOf.Flame, (Thing)null, PD, (ThingDef)null);
+                MoteMaker.MakeStaticMote(base.Position, base.Map, ThingDefOf.Mote_ShotFlash, 9f);
+                GenExplosion.DoExplosion(base.Position, base.Map, 1, DamageDefOf.Flame, (Thing)null, PlasmaDrill, (ThingDef)null);
                 Burnticks2 = 4;
             }
 
             if (drillticksRemaining == 0)
             {
-                Messages.Message(Translator.Translate("PlasmaDrillingComplete"), MessageSound.Standard);
-                GenSpawn.Spawn(ThingDef.Named("MiningHole"), this.Position);
-                SoundStarter.PlayOneShot(Building_PlasmaDrillAction.PDF, (SoundInfo)base.Position);
+                Messages.Message("Ind_PlasmaDrillingComplete".Translate(), MessageSound.Standard);
+                GenSpawn.Spawn(ThingDef.Named("Ind_MiningHole"), this.Position, base.Map);
+                SoundStarter.PlayOneShot(Building_PlasmaDrillAction.PlasmaDrillFire, new TargetInfo(base.Position, base.Map, false));
                 ((Thing)this).Destroy((DestroyMode)0);
             }
         }

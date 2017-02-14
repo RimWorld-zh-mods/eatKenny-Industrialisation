@@ -10,13 +10,16 @@ namespace Industrialisation
 {
     public class PlaceWorker_OnMiningHole : PlaceWorker
     {
-        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot)
+        //public static ThingDef MiningHole = ThingDef.Named("MiningHole");
+
+        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Thing thingToIgnore = null)
         {
-            Thing thing = Find.ThingGrid.ThingAt(loc, ThingDef.Named("MiningHole"));
+            Thing thing = base.Map.thingGrid.ThingAt(loc, ThingDef.Named("Ind_MiningHole"));
             if (thing == null || thing.Position != loc)
-                return (AcceptanceReport)Translator.Translate("MustPlaceOnMiningHole");
-            else
-                return (AcceptanceReport)true;
+            {
+                return "Ind_MustPlaceOnMiningHole".Translate();
+            }
+            return true;
         }
     }
 }

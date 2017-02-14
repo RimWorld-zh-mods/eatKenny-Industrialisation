@@ -47,11 +47,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Building_NPP.cs" />
+    <Compile Include="Building_NuclearPowerPlant.cs" />
     <Compile Include="Building_PlasmaDrillAction.cs" />
     <Compile Include="Building_PlasmaDrillDeployed.cs" />
     <Compile Include="Calc.cs" />
-    <Compile Include="PlaceWorker_WaterPump.cs" />
     <Compile Include="PlaceWorker_OnMiningHole.cs" />
     <Compile Include="Projectile_PlasmaDrillBullet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================ Bases ================ -->
+  
+  <ThingDef Name="Ind_ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+		<statBases>
+			<Beauty>-7</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+
+  <!-- ================ Concrete ================ -->
+
+  <ThingDef ParentName="Ind_ResourceBase" Name="Ind_StoneBlocksBase" Abstract="True">
+    <description>Blocks of stone. Mostly useful for building long-lasting, simple structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+			<Beauty>-12</Beauty>
+		</statBases>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.20</commonality> <!-- because there are so many stone types -->
+      <appearance>Bricks</appearance>
+      <statOffsets>
+        <WorkToBuild>140</WorkToBuild>
+				<Beauty>2</Beauty>
+      </statOffsets>
+      <statFactors>
+        <Beauty>1.2</Beauty>
+        <MarketValue>0.4</MarketValue>
+        <MaxHitPoints>2.4</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>6.0</WorkToBuild>
+				<WorkToMake>1.3</WorkToMake>
+        <DoorOpenSpeed>0.45</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+        <MeleeWeapon_Cooldown>1.35</MeleeWeapon_Cooldown>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="Ind_StoneBlocksBase">
+    <defName>Ind_Concrete</defName>
+    <label>concrete</label>
+    <description>widely used construction material.</description>
+    <graphicData>
+      <texPath>Ind/Stuff/Concrete</texPath>
+    </graphicData>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>4.9</MarketValue>
+      <Mass>4</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <color>(122,122,120)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>concrete</stuffAdjective>
+      <statOffsets>
+        <WorkToBuild>140</WorkToBuild>
+				<Beauty>0</Beauty>
+      </statOffsets>
+      <statFactors>
+        <Beauty>1</Beauty>  
+        <MarketValue>0.45</MarketValue>
+        <MaxHitPoints>2.3</MaxHitPoints>
+				<WorkToBuild>1.7</WorkToBuild>
+				<WorkToMake>1.7</WorkToMake>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <!-- ================ Metal ================ -->
+
+  <ThingDef ParentName="Ind_ResourceBase">
+    <defName>Ind_HighGradeSteel</defName>
+    <label>high-grade steel</label>
+    <description>High-grade steel used for building more stronger structures, tools, and weapons.</description>
+    <graphicData>
+      <texPath>Ind/Stuff/HighGradeSteel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>4</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <slagDef>ChunkSlagSteel</slagDef>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.25</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(126,126,129)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1.7</MaxHitPoints>
+        <Beauty>1.1</Beauty>
+        <Flammability>0.1</Flammability>
+				<WorkToBuild>1.2</WorkToBuild>
+				<WorkToMake>1.2</WorkToMake>
+        <MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="Ind_ResourceBase">
+    <defName>Ind_Copper</defName>
+    <label>copper</label>
+    <description>soft but beautiful metal, mostly used for art.</description>
+    <graphicData>
+      <texPath>Ind/Stuff/Copper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>7</MarketValue>
+      <Mass>0.57</Mass>
+      <SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.25</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(128,170,150)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>7</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.7</MaxHitPoints>
+        <Beauty>3.5</Beauty>
+        <Flammability>0.2</Flammability>
+        <WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="Ind_ResourceBase">
+    <defName>Ind_Aluminium</defName>
+    <label>aluminium</label>
+    <description>Aluminium is a silvery white, soft, nonmagnetic, ductile metal, remarkable for the metal's low density and for its ability to resist corrosion due to the phenomenon of passivation.</description>
+    <graphicData>
+      <texPath>Ind/Stuff/Aluminium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>4</MarketValue>
+      <Mass>0.17</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>1</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.25</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(175,175,175)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>2.5</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>0.3</Flammability>
+        <WorkToMake>0.8</WorkToMake>
+				<WorkToBuild>0.8</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

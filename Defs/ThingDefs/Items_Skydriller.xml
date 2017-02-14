@@ -1,28 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
-  <ThingDef Name="BaseGun" Abstract="True">
-    <category>Item</category>
-    <thingClass>ThingWithComps</thingClass>
-    <equipmentType>Primary</equipmentType>
-    <pathCost>10</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <selectable>True</selectable>
-    <graphicData>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>1</DeteriorationRate>
-      <SellPriceFactor>1</SellPriceFactor>
-    </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
-    <techLevel>Spacer</techLevel>
-    <thingCategories>
+	<ThingDef Abstract="True" Name="Ind_BaseWeapon">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<equipmentType>Primary</equipmentType>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>10</pathCost>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>-6</Beauty>
+			<SellPriceFactor>0.20</SellPriceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+	</ThingDef>
+
+  <ThingDef Name="Ind_BaseGun" Abstract="True" ParentName="Ind_BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<thingCategories>
       <li>WeaponsRanged</li>
     </thingCategories>
     <inspectorTabs>
@@ -30,24 +41,17 @@
     </inspectorTabs>
     <comps>
       <li>
-        <compClass>CompForbiddable</compClass>
+        <compClass>CompQuality</compClass>
       </li>
-      <li>
-        <compClass>CompEquippable</compClass>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_WeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
     </comps>
-    <smeltProducts>
-      <Steel>20</Steel>
-    </smeltProducts>
   </ThingDef>
 
-  <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
-  </ThingDef>
-
-  <ThingDef Name="BaseBullet" Abstract="True">
+  <ThingDef Name="Ind_BaseBullet" Abstract="True">
     <category>Projectile</category>
     <tickerType>Normal</tickerType>
     <altitudeLayer>Projectile</altitudeLayer>
@@ -55,68 +59,43 @@
     <label>bullet</label>
     <useHitPoints>False</useHitPoints>
     <neverMultiSelect>True</neverMultiSelect>
-           <graphicData>
+    <graphicData>
       <shaderType>Transparent</shaderType>
     </graphicData>
   </ThingDef>
 
+  <!-- ================ SkyDriller ================ -->
 
-<ThingDef Name="PlasmaDrillBullet" Abstract="True">
-		<category>Projectile</category>
-		<tickerType>Normal</tickerType>
-		<altitudeLayer>Projectile</altitudeLayer>
-		<thingClass>Industrialisation.Projectile_PlasmaDrillBullet</thingClass>
-				<useHitPoints>False</useHitPoints>
-		<neverMultiSelect>True</neverMultiSelect>
-		        <graphicData>
-      <shaderType>Transparent</shaderType>
+  <ThingDef ParentName="Ind_BaseBullet">
+    <defName>Ind_Bullet_PlasmaDrill</defName>
+    <label>plasma drill bullet</label>
+    <thingClass>Industrialisation.Projectile_PlasmaDrillBullet</thingClass>
+    <graphicData>
+      <texPath>Ind/SkyDriller/SkyllDriller_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
     </graphicData>
-	</ThingDef>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Stun</damageDef>
+      <DamageAmountBase>0</DamageAmountBase>
+      <Speed>1000</Speed>
+      <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
+    </projectile>
+  </ThingDef>
 
-<!-- ============================================== -->
-
-
-	<ThingDef ParentName="PlasmaDrillBullet">
-		
-                               <defName>Bullet_PlasmaDrill</defName>
-		
-                               <label>plasma drill bullet</label>
-
-<graphicData>	     
-                                <texPath>Inv</texPath>
-    <graphicClass>Graphic_Single</graphicClass>	
-</graphicData>
-                                <projectile>
-			
-                                <flyOverhead>true</flyOverhead>
-      
-                                <damageDef>Stun</damageDef>
-			
-                                <DamageAmountBase>0</DamageAmountBase>
-			
-                                <Speed>1000</Speed>
-
-                                <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>		
-                                </projectile>
-	
-                </ThingDef>
-
-
-
-
-
-	<ThingDef ParentName="BaseGun">
-		<defName>SkyDriller</defName>
-		<label>skydriller</label>
-		<description>Skydriller is a low orbit plasma driller, use this device to order a plasma drilling at target location, it will creat a mining hole. NOTE: sky driller can't drill through mountain.</description>
-<graphicData>
-		<texPath>SD</texPath>
-                                <graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-		<soundInteract>InteractPistol</soundInteract>
+  <ThingDef ParentName="Ind_BaseGun">
+    <defName>Ind_SkyDriller</defName>
+    <label>skydriller</label>
+    <description>Skydriller is a low orbit plasma driller, use this device to order a plasma drilling at target location, it will creat a mining hole. NOTE: sky driller can't drill through mountain.</description>
+    <graphicData>
+      <texPath>Ind/SkyDriller/SkyllDriller</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <canBeSpawningInventory>false</canBeSpawningInventory>
     <statBases>
       <MarketValue>3500</MarketValue>
+      <Mass>1.2</Mass>
     </statBases>
     <weaponTags>
       <li>Gun</li>
@@ -125,25 +104,95 @@
     <tradeTags>
       <li>Exotic</li>
     </tradeTags>
-		<verbs>
-		   <li>
-			<verbClass>Verb_ShootOneUse</verbClass>
-        		<hasStandardCommand>true</hasStandardCommand>
-			<projectileDef>Bullet_PlasmaDrill</projectileDef>
-			<warmupTicks>240</warmupTicks>
-                                                <range>9999</range>
-        <forcedMissRadius>0</forcedMissRadius>
+    <verbs>
+      <li>
         <accuracyTouch>1.0</accuracyTouch>
         <accuracyShort>1.0</accuracyShort>
         <accuracyMedium>1.0</accuracyMedium>
         <accuracyLong>1.0</accuracyLong>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Ind_Bullet_PlasmaDrill</projectileDef>
+        <forcedMissRadius>0</forcedMissRadius>
+        <warmupTime>4</warmupTime>
+        <range>9999</range>
         <burstShotCount>1</burstShotCount>
         <onlyManualCast>true</onlyManualCast>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		   </li>
-		</verbs>
-	</ThingDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="Ind_BuildingBase">
+    <defName>Ind_PlasmaDrillDeployed</defName>
+    <label>drilling spot</label>
+    <description></description>
+    <thingClass>Industrialisation.Building_PlasmaDrillDeployed</thingClass>
+    <graphicData>
+      <texPath>Ind/SkyDriller/SkyllDriller_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>TerrainScatter</altitudeLayer>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <passability>PassThroughOnly</passability>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+  </ThingDef>
+  
+  <ThingDef ParentName="Ind_BuildingBase">
+    <defName>Ind_PlasmaDrillAction</defName>
+    <label>plasma drill in action</label>
+    <description></description>
+    <thingClass>Industrialisation.Building_PlasmaDrillAction</thingClass>
+    <graphicData>
+      <texPath>Ind/SkyDriller/SkyllDriller_Bullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>TerrainScatter</altitudeLayer>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <pathCost>55</pathCost>
+    <pathCostIgnoreRepeat>true</pathCostIgnoreRepeat>
+    <passability>PassThroughOnly</passability>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusher</compClass>
+        <heatPerSecond>2800</heatPerSecond>
+      </li>
+    </comps>
+  </ThingDef>
 
-</ThingDefs>
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>Ind_MiningHole</defName>
+    <label>mining hole</label>
+    <description>A mining hole.</description>
+    <thingClass>Thing</thingClass>
+    <category>Ethereal</category>
+    <graphicData>
+      <texPath>Ind/SkyDriller/MineHole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Floor</altitudeLayer>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Never</tickerType>
+    <selectable>true</selectable>
+    <size>(3,3)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+  </ThingDef>
+
+</Defs>

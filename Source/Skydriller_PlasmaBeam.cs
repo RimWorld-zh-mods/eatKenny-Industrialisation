@@ -16,7 +16,7 @@ namespace Industrialisation
     {
         private IntVec3 strikeLoc = IntVec3.Invalid;
         private Mesh boltMesh;
-        private static readonly Material PBMat = MaterialPool.MatFrom("PlasmaBeam");
+        private static readonly Material PlasmaBeamMat = MaterialPool.MatFrom("Ind/SkyDriller/PlasmaBeam");
         private int age;
         private int duration;
 
@@ -33,20 +33,21 @@ namespace Industrialisation
             ++this.age;
         }
          
-        public Skydriller_PlasmaBeam()
+        public Skydriller_PlasmaBeam(Map map) : base(map)
         {
             this.duration = 14;
         }
 
-        public Skydriller_PlasmaBeam(IntVec3 forcedStrikeLoc) : this()
+        public Skydriller_PlasmaBeam(Map map, IntVec3 forcedStrikeLoc) : this(map)
         {
             this.strikeLoc = forcedStrikeLoc;
         }
+
         public override void FireEvent()
         {
             if (!this.strikeLoc.IsValid)
             {
-                this.strikeLoc = CellFinderLoose.RandomCellWith((IntVec3 sq) => sq.Standable() && !Find.RoofGrid.Roofed(sq));
+                this.strikeLoc = CellFinderLoose.RandomCellWith((IntVec3 sq) => sq.Standable(map) && !sq.Roofed(map), map);
             }
             this.boltMesh = Skydriller_PLasmaBeam_MeshMaker.NewBoltMesh();
         }
@@ -64,7 +65,7 @@ namespace Industrialisation
 
         public override void WeatherEventDraw()
         {
-            Graphics.DrawMesh(this.boltMesh, this.strikeLoc.ToVector3ShiftedWithAltitude(AltitudeLayer.WorldDataOverlay), Quaternion.identity, FadedMaterialPool.FadedVersionOf(Skydriller_PlasmaBeam.PBMat, this.PBBrightness), 0);
+            Graphics.DrawMesh(this.boltMesh, this.strikeLoc.ToVector3ShiftedWithAltitude(AltitudeLayer.WorldDataOverlay), Quaternion.identity, FadedMaterialPool.FadedVersionOf(Skydriller_PlasmaBeam.PlasmaBeamMat, this.PBBrightness), 0);
         }
     }
 }
