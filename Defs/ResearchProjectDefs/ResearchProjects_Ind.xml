@@ -3,7 +3,7 @@
 
 	<ResearchProjectDef>
 		<defName>Ind_ConcreteProduction</defName>
-		<label>concrete production</label>
+		<label>Ind: concrete production</label>
 		<description>Allows you to produce concrete.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -16,7 +16,7 @@
 
 	<ResearchProjectDef>
 		<defName>Ind_IndustrialBatteries</defName>
-		<label>industrial batteries</label>
+		<label>Ind: industrial batteries</label>
 		<description>Allows you to build industrial batteries.</description>
 		<baseCost>800</baseCost>
 		<techLevel>Industrial</techLevel>
@@ -30,7 +30,7 @@
 
 	<ResearchProjectDef>
 		<defName>Ind_NuclearPower</defName>
-		<label>nuclear power</label>
+		<label>Ind: nuclear power</label>
 		<description>Allows you to build nuclear power plant.</description>
 		<baseCost>5000</baseCost>
 		<techLevel>Industrial</techLevel>

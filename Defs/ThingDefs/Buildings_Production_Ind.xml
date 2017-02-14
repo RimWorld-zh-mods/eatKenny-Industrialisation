@@ -141,6 +141,10 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>
     <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>ExtractMetalFromSlag</li>
+      <li>SmeltWeapon</li>
+    </recipes>
     <researchPrerequisites>
       <li>ElectricSmelting</li>
     </researchPrerequisites>
