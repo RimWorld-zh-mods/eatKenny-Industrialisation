@@ -1,7 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Industrialisation</name>
-	<author>eatKenny</author>
+	<author>eatKenny, duduluu</author>
 	<targetVersion>0.16.1393</targetVersion>
-	<description>Adds some heavy industries to the game.</description>
+	<description>Adds some heavy industries to the game.
+
+Original Author: eatKenny  
+Current Maintainer: duduluu  
+
+# Feature
+
+New stuff:  
+ - concrete  
+ - high-grade steel  
+ - copper  
+ - aluminium
+
+New bench:
+ - concrete mixer
+ - electric arc furnace
+ - deep mine
+
+New power building:  
+ - industrial cable
+ - industrial battery
+ - neclear power plant
+
+ New trader ship:
+  - deep space mining ship
+
+Tips: To build a deep mine, you must buy a Skydriller to create a mine hole.  
+(The Skydriller looks like a walkie-talkie, just use it like a grenade - hit the grand, than the plasma beam will make a mine hole.)
+
+# License
+
+Industrialisation mod is distributed under the [MIT License](https://opensource.org/licenses/MIT).</description>
 </ModMetaData>
