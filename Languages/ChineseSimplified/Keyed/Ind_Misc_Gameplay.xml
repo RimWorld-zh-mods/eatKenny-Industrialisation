@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Various -->
+
+  <Ind_PlasmaDrillingOrderSend>钻矿命令已发送至天钻。</Ind_PlasmaDrillingOrderSend>
+  <Ind_LowOrbitPlasmaDrillApproaching>天钻即将到达……</Ind_LowOrbitPlasmaDrillApproaching>
+  <Ind_InitiatingPlasmaDrilling>警告：天钻已就位，正在初始化等离子钻机。</Ind_InitiatingPlasmaDrilling>
+  <Ind_PlasmaDrillingComplete>钻矿命令已完成。</Ind_PlasmaDrillingComplete>
+  <Ind_MustPlaceOnMiningHole>必须放置于深矿洞之上。</Ind_MustPlaceOnMiningHole>
+
+</LanguageData>

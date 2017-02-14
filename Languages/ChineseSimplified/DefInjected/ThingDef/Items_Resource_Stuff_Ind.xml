@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Concrete -->
+
+  <Ind_Concrete.label>混凝土</Ind_Concrete.label>
+  <Ind_Concrete.description>使用广泛的建筑材料。</Ind_Concrete.description>
+  <Ind_Concrete.stuffProps.stuffAdjective>混凝土</Ind_Concrete.stuffProps.stuffAdjective>
+
+
+  <!-- Metal -->
+
+  <Ind_HighGradeSteel.label>高级钢</Ind_HighGradeSteel.label>
+  <Ind_HighGradeSteel.description>高级钢可用于建造更坚固的结构、工具和武器。</Ind_HighGradeSteel.description>
+  <Ind_HighGradeSteel.stuffProps.stuffAdjective>高级钢</Ind_HighGradeSteel.stuffProps.stuffAdjective>
+
+  <Ind_Copper.label>铜</Ind_Copper.label>
+  <Ind_Copper.description>柔软但漂亮，通常用于艺术。</Ind_Copper.description>
+  <Ind_Copper.stuffProps.stuffAdjective>铜</Ind_Copper.stuffProps.stuffAdjective>
+
+  <Ind_Aluminium.label>铝</Ind_Aluminium.label>
+  <Ind_Aluminium.description>铝是一种银白色、柔软、无磁性、延展性良好的金属，低密度以及由钝化现象而具备的耐腐蚀性，因而倍受青睐。</Ind_Aluminium.description>
+  <Ind_Aluminium.stuffProps.stuffAdjective>铝</Ind_Aluminium.stuffProps.stuffAdjective>
+
+
+</LanguageData>

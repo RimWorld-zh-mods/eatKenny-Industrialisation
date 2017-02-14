@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Work tables -->
+
+  <Ind_ConcreteMixer.label>混凝土攪拌機</Ind_ConcreteMixer.label>
+  <Ind_ConcreteMixer.description>混凝土攪拌機。</Ind_ConcreteMixer.description>
+  <Ind_ConcreteMixer_Blueprint.label>混凝土攪拌機（藍圖）</Ind_ConcreteMixer_Blueprint.label>
+  <Ind_ConcreteMixer_Frame.label>混凝土攪拌機（建造中）</Ind_ConcreteMixer_Frame.label>
+
+  <Ind_ElectricArcFurnace.label>電弧爐</Ind_ElectricArcFurnace.label>
+  <Ind_ElectricArcFurnace.description>電弧爐，用於生產鋼材，效率高但電力消耗也非常高。</Ind_ElectricArcFurnace.description>
+  <Ind_ElectricArcFurnace_Blueprint.label>電弧爐（藍圖）</Ind_ElectricArcFurnace_Blueprint.label>
+  <Ind_ElectricArcFurnace_Frame.label>電弧爐（建造中）</Ind_ElectricArcFurnace_Frame.label>
+
+  <Ind_DeepMine.label>深矿</Ind_DeepMine.label>
+  <Ind_DeepMine.description>你可以從深矿中開採非常多種資源，必須建造在深礦洞上。（用「天鑽」發出等離子開鑽命令，便可在開鑽點製造一個深礦洞。）</Ind_DeepMine.description>
+  <Ind_DeepMine_Blueprint.label>深矿（藍圖）</Ind_DeepMine_Blueprint.label>
+  <Ind_DeepMine_Frame.label>深矿（建造中）</Ind_DeepMine_Frame.label>
+
+
+</LanguageData>

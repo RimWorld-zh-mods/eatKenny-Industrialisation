@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- misc -->
+
+  <Ind_DoBillsMixconcrete.label>完成混凝土搅拌机清单</Ind_DoBillsMixconcrete.label>
+  <Ind_DoBillsMixconcrete.verb>工作</Ind_DoBillsMixconcrete.verb>
+  <Ind_DoBillsMixconcrete.gerund>工作于</Ind_DoBillsMixconcrete.gerund>
+
+  <Ind_DoBillsDeepMine.label>完成深矿清单</Ind_DoBillsDeepMine.label>
+  <Ind_DoBillsDeepMine.verb>工作</Ind_DoBillsDeepMine.verb>
+  <Ind_DoBillsDeepMine.gerund>工作于</Ind_DoBillsDeepMine.gerund>
+
+  <Ind_DoBillsElectricArcFurnace.label>完成电弧炉清单</Ind_DoBillsElectricArcFurnace.label>
+  <Ind_DoBillsElectricArcFurnace.verb>工作</Ind_DoBillsElectricArcFurnace.verb>
+  <Ind_DoBillsElectricArcFurnace.gerund>工作于</Ind_DoBillsElectricArcFurnace.gerund>
+
+
+</LanguageData>

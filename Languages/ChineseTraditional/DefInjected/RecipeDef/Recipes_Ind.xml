@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Make Concrete -->
+
+  <Ind_MakeConcreteFromAny.label>使用岩石塊生產混凝土</Ind_MakeConcreteFromAny.label>
+  <Ind_MakeConcreteFromAny.description>將岩石塊轉化成混凝土。</Ind_MakeConcreteFromAny.description>
+  <Ind_MakeConcreteFromAny.jobString>正在將岩石塊轉化成混凝土。</Ind_MakeConcreteFromAny.jobString>
+
+  <Ind_MakeConcreteFromSandstone.label>使用砂岩塊生產混凝土</Ind_MakeConcreteFromSandstone.label>
+  <Ind_MakeConcreteFromSandstone.description>將岩石塊轉化成混凝土。</Ind_MakeConcreteFromSandstone.description>
+  <Ind_MakeConcreteFromSandstone.jobString>正在將岩石塊轉化成混凝土。</Ind_MakeConcreteFromSandstone.jobString>
+
+  <Ind_MakeConcreteFromGranite.label>使用花崗岩塊生產混凝土</Ind_MakeConcreteFromGranite.label>
+  <Ind_MakeConcreteFromGranite.description>將岩石塊轉化成混凝土。</Ind_MakeConcreteFromGranite.description>
+  <Ind_MakeConcreteFromGranite.jobString>正在將岩石塊轉化成混凝土。</Ind_MakeConcreteFromGranite.jobString>
+
+  <Ind_MakeConcreteFromLimestone.label>使用石灰岩塊生產混凝土</Ind_MakeConcreteFromLimestone.label>
+  <Ind_MakeConcreteFromLimestone.description>將岩石塊轉化成混凝土。</Ind_MakeConcreteFromLimestone.description>
+  <Ind_MakeConcreteFromLimestone.jobString>正在將岩石塊轉化成混凝土。</Ind_MakeConcreteFromLimestone.jobString>
+
+  <Ind_MakeConcreteFromSlate.label>使用板岩塊生產混凝土</Ind_MakeConcreteFromSlate.label>
+  <Ind_MakeConcreteFromSlate.description>將岩石塊轉化成混凝土。</Ind_MakeConcreteFromSlate.description>
+  <Ind_MakeConcreteFromSlate.jobString>正在將岩石塊轉化成混凝土。</Ind_MakeConcreteFromSlate.jobString>
+
+  <Ind_MakeConcreteFromMarble.label>使用大理石塊生產混凝土</Ind_MakeConcreteFromMarble.label>
+  <Ind_MakeConcreteFromMarble.description>將岩石塊轉化成混凝土。</Ind_MakeConcreteFromMarble.description>
+  <Ind_MakeConcreteFromMarble.jobString>正在將岩石塊轉化成混凝土。</Ind_MakeConcreteFromMarble.jobString>
+
+
+  <!-- Electric Arc Furnace -->
+
+  <Ind_MakeHighGradeSteelEAF.label>生產高級鋼</Ind_MakeHighGradeSteelEAF.label>
+  <Ind_MakeHighGradeSteelEAF.description>使用電弧爐將鋼鐵加工成高級鋼。</Ind_MakeHighGradeSteelEAF.description>
+  <Ind_MakeHighGradeSteelEAF.jobString>正在將鋼鐵加工成高級鋼</Ind_MakeHighGradeSteelEAF.jobString>
+
+  <!-- Deep Mine Metal -->
+
+  <Ind_DeepMineSteel.label>開採鋼鐵</Ind_DeepMineSteel.label>
+  <Ind_DeepMineSteel.description>開採鋼鐵。</Ind_DeepMineSteel.description>
+  <Ind_DeepMineSteel.jobString>正在用深礦開採礦物。</Ind_DeepMineSteel.jobString>
+
+  <Ind_DeepMineCopper.label>開採銅</Ind_DeepMineCopper.label>
+  <Ind_DeepMineCopper.description>開採銅。</Ind_DeepMineCopper.description>
+  <Ind_DeepMineCopper.jobString>正在用深礦開採礦物。</Ind_DeepMineCopper.jobString>
+
+  <Ind_DeepMineAluminium.label>開採鋁</Ind_DeepMineAluminium.label>
+  <Ind_DeepMineAluminium.description>開採鋁。</Ind_DeepMineAluminium.description>
+  <Ind_DeepMineAluminium.jobString>正在用深礦開採礦物。</Ind_DeepMineAluminium.jobString>
+
+  <Ind_DeepMinePlasteel.label>開採塑鋼</Ind_DeepMinePlasteel.label>
+  <Ind_DeepMinePlasteel.description>開採塑鋼。</Ind_DeepMinePlasteel.description>
+  <Ind_DeepMinePlasteel.jobString>正在用深礦開採礦物。</Ind_DeepMinePlasteel.jobString>
+
+  <Ind_DeepMineSilver.label>開採白銀</Ind_DeepMineSilver.label>
+  <Ind_DeepMineSilver.description>開採白銀。</Ind_DeepMineSilver.description>
+  <Ind_DeepMineSilver.jobString>正在用深礦開採礦物。</Ind_DeepMineSilver.jobString>
+
+  <Ind_DeepMineGold.label>開採黃金</Ind_DeepMineGold.label>
+  <Ind_DeepMineGold.description>開採黃金。</Ind_DeepMineGold.description>
+  <Ind_DeepMineGold.jobString>正在用深礦開採礦物。</Ind_DeepMineGold.jobString>
+
+  <Ind_DeepMineUranium.label>開採鈾</Ind_DeepMineUranium.label>
+  <Ind_DeepMineUranium.description>開採鈾。</Ind_DeepMineUranium.description>
+  <Ind_DeepMineUranium.jobString>正在用深礦開採礦物。</Ind_DeepMineUranium.jobString>
+
+
+  <!-- Deep Mine Stone -->
+
+  <Ind_DeepMineJade.label>開採翡翠</Ind_DeepMineJade.label>
+  <Ind_DeepMineJade.description>開採翡翠。</Ind_DeepMineJade.description>
+  <Ind_DeepMineJade.jobString>正在用深礦開採礦物。</Ind_DeepMineJade.jobString>
+
+  <Ind_DeepMineChunkSandstone.label>開採砂岩塊</Ind_DeepMineChunkSandstone.label>
+  <Ind_DeepMineChunkSandstone.description>開採砂岩塊。</Ind_DeepMineChunkSandstone.description>
+  <Ind_DeepMineChunkSandstone.jobString>正在用深礦開採礦物。</Ind_DeepMineChunkSandstone.jobString>
+
+  <Ind_DeepMineChunkGranite.label>開採花崗岩塊</Ind_DeepMineChunkGranite.label>
+  <Ind_DeepMineChunkGranite.description>開採花崗岩塊。</Ind_DeepMineChunkGranite.description>
+  <Ind_DeepMineChunkGranite.jobString>正在用深礦開採礦物。</Ind_DeepMineChunkGranite.jobString>
+
+  <Ind_DeepMineChunkLimestone.label>開採石灰岩塊</Ind_DeepMineChunkLimestone.label>
+  <Ind_DeepMineChunkLimestone.description>開採石灰岩塊。</Ind_DeepMineChunkLimestone.description>
+  <Ind_DeepMineChunkLimestone.jobString>正在用深礦開採礦物。</Ind_DeepMineChunkLimestone.jobString>
+
+  <Ind_DeepMineChunkSlate.label>開採板岩塊</Ind_DeepMineChunkSlate.label>
+  <Ind_DeepMineChunkSlate.description>開採板岩塊。</Ind_DeepMineChunkSlate.description>
+  <Ind_DeepMineChunkSlate.jobString>正在用深礦開採礦物。</Ind_DeepMineChunkSlate.jobString>
+
+  <Ind_DeepMineChunkMarble.label>開採大理石塊</Ind_DeepMineChunkMarble.label>
+  <Ind_DeepMineChunkMarble.description>開採大理石塊。</Ind_DeepMineChunkMarble.description>
+  <Ind_DeepMineChunkMarble.jobString>正在用深礦開採礦物。</Ind_DeepMineChunkMarble.jobString>
+
+
+</LanguageData>

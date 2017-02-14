@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ind_ConcreteProduction.label>Ind：混凝土生產</Ind_ConcreteProduction.label>
+  <Ind_ConcreteProduction.description>解鎖生產「混凝土」。</Ind_ConcreteProduction.description>
+
+  <Ind_IndustrialBatteries.label>Ind：工業蓄電池</Ind_IndustrialBatteries.label>
+  <Ind_IndustrialBatteries.description>解鎖建造「工業蓄電池」。</Ind_IndustrialBatteries.description>
+
+  <Ind_NuclearPower.label>Ind：核能</Ind_NuclearPower.label>
+  <Ind_NuclearPower.description>解鎖建造「核電站」。</Ind_NuclearPower.description>
+
+
+</LanguageData>

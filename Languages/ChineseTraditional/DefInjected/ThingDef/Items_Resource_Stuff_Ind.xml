@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Concrete -->
+
+  <Ind_Concrete.label>混凝土</Ind_Concrete.label>
+  <Ind_Concrete.description>使用廣泛的建築材料。</Ind_Concrete.description>
+  <Ind_Concrete.stuffProps.stuffAdjective>混凝土</Ind_Concrete.stuffProps.stuffAdjective>
+
+
+  <!-- Metal -->
+
+  <Ind_HighGradeSteel.label>高級鋼</Ind_HighGradeSteel.label>
+  <Ind_HighGradeSteel.description>高級鋼可用於建造更堅固的結構、工具和武器。</Ind_HighGradeSteel.description>
+  <Ind_HighGradeSteel.stuffProps.stuffAdjective>高級鋼</Ind_HighGradeSteel.stuffProps.stuffAdjective>
+
+  <Ind_Copper.label>銅</Ind_Copper.label>
+  <Ind_Copper.description>柔軟但漂亮，通常用於藝術。</Ind_Copper.description>
+  <Ind_Copper.stuffProps.stuffAdjective>銅</Ind_Copper.stuffProps.stuffAdjective>
+
+  <Ind_Aluminium.label>鋁</Ind_Aluminium.label>
+  <Ind_Aluminium.description>鋁是一種銀白色、柔軟、無磁性、延展性良好的金屬，低密度以及由鈍化現象而具備的耐腐蝕性，因而倍受青睞。</Ind_Aluminium.description>
+  <Ind_Aluminium.stuffProps.stuffAdjective>鋁</Ind_Aluminium.stuffProps.stuffAdjective>
+
+
+</LanguageData>

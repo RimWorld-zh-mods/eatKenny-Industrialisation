@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Resource rocks -->
+
+  <Ind_MineableCopper.label>铜矿</Ind_MineableCopper.label>
+  <Ind_MineableCopper.description>某个倒塌的远古建筑的遗迹。富含铜。</Ind_MineableCopper.description>
+
+  <Ind_MineableAluminium.label>铝矿</Ind_MineableAluminium.label>
+  <Ind_MineableAluminium.description>某个倒塌的远古建筑的遗迹。富含铝。</Ind_MineableAluminium.description>
+
+
+</LanguageData>
