@@ -20,7 +20,7 @@ New bench:
 New power building:  
  - industrial cable
  - industrial battery
- - neclear power plant
+ - nuclear power plant
 
 New trader ship:
  - deep space mining ship
