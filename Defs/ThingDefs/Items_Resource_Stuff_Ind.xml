@@ -74,7 +74,6 @@
     <graphicData>
       <texPath>Ind/Stuff/Concrete</texPath>
     </graphicData>
-    <stackLimit>25</stackLimit>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <MarketValue>4.9</MarketValue>
