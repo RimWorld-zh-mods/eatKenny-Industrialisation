@@ -81,9 +81,6 @@
       <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
       <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
     </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
     <stuffProps>
       <color>(122,122,120)</color>
       <soundImpactStuff>BulletImpactGround</soundImpactStuff>
