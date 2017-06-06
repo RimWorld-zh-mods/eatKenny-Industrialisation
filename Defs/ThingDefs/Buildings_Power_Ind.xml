@@ -8,9 +8,9 @@
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
+      <texPath>Ind/Buildings/IndustrialCable_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <color>(180,180,180)</color>
+      <!--<color>(180,180,180)</color>-->
       <linkType>Transmitter</linkType>
       <linkFlags>
         <li>PowerConduit</li>

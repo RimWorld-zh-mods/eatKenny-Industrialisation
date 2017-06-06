@@ -5,6 +5,7 @@
 
   <Ind_CopperTile_Blueprint.label>铜地砖（蓝图）</Ind_CopperTile_Blueprint.label>
   <Ind_CopperTile_Frame.label>铜地砖（建造中）</Ind_CopperTile_Frame.label>
+  <Ind_CopperTile_Frame.description>建造中的地板。</Ind_CopperTile_Frame.description>
 
 
 </LanguageData>

@@ -17,7 +17,7 @@
 			<li>Ind_ConcreteMixer</li>
 		</recipeUsers>
     <products>
-      <Ind_Concrete>6</Ind_Concrete>
+      <Ind_Concrete>20</Ind_Concrete>
     </products>
 	</RecipeDef>
 
@@ -199,7 +199,7 @@
     <description>Minig deep steel.</description>
     <workAmount>1500</workAmount>
     <products>
-      <Steel>25</Steel>
+      <Steel>15</Steel>
     </products>
   </RecipeDef>
 
@@ -209,7 +209,7 @@
     <description>Minig deep copper.</description>
     <workAmount>2000</workAmount>
     <products>
-      <Ind_Copper>25</Ind_Copper>
+      <Ind_Copper>15</Ind_Copper>
     </products>
   </RecipeDef>
 
@@ -219,7 +219,7 @@
     <description>Minig deep aluminium.</description>
     <workAmount>2500</workAmount>
     <products>
-      <Ind_Aluminium>25</Ind_Aluminium>
+      <Ind_Aluminium>15</Ind_Aluminium>
     </products>
   </RecipeDef>
 
@@ -229,7 +229,7 @@
     <description>Minig deep plasteel.</description>
     <workAmount>4000</workAmount>
     <products>
-      <Plasteel>25</Plasteel>
+      <Plasteel>10</Plasteel>
     </products>
   </RecipeDef>
 
@@ -249,7 +249,7 @@
     <description>Minig deep gold.</description>
     <workAmount>4000</workAmount>
     <products>
-      <Gold>25</Gold>
+      <Gold>10</Gold>
     </products>
   </RecipeDef>
 
@@ -271,7 +271,7 @@
     <description>Minig deep jade.</description>
     <workAmount>4000</workAmount>
     <products>
-      <Jade>25</Jade>
+      <Jade>15</Jade>
     </products>
   </RecipeDef>
 
@@ -279,7 +279,7 @@
     <defName>Ind_DeepMineChunkSandstone</defName>
     <label>minig deep sandstone chunk</label>
     <description>Minig deep sandstone chunk.</description>
-    <workAmount>400</workAmount>
+    <workAmount>800</workAmount>
     <products>
       <ChunkSandstone>1</ChunkSandstone>
     </products>
@@ -289,7 +289,7 @@
     <defName>Ind_DeepMineChunkGranite</defName>
     <label>minig deep granite chunk</label>
     <description>Minig deep granite chunk.</description>
-    <workAmount>900</workAmount>
+    <workAmount>1800</workAmount>
     <products>
       <ChunkGranite>1</ChunkGranite>
     </products>
@@ -299,7 +299,7 @@
     <defName>Ind_DeepMineChunkLimestone</defName>
     <label>minig deep limestone chunk</label>
     <description>Minig deep limestone chunk.</description>
-    <workAmount>700</workAmount>
+    <workAmount>1400</workAmount>
     <products>
       <ChunkLimestone>1</ChunkLimestone>
     </products>
@@ -309,7 +309,7 @@
     <defName>Ind_DeepMineChunkSlate</defName>
     <label>minig deep slate chunk</label>
     <description>Minig deep slate chunk.</description>
-    <workAmount>500</workAmount>
+    <workAmount>1000</workAmount>
     <products>
       <ChunkSlate>1</ChunkSlate>
     </products>
@@ -319,7 +319,7 @@
     <defName>Ind_DeepMineChunkMarble</defName>
     <label>minig deep marble chunk</label>
     <description>Minig deep marble chunk.</description>
-    <workAmount>400</workAmount>
+    <workAmount>800</workAmount>
     <products>
       <ChunkMarble>1</ChunkMarble>
     </products>

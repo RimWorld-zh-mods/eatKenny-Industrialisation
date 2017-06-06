@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JobDefs>
+
+  <JobDef>
+    <defName>Ind_ActiveSkydrillerCallmaker</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>Activing skydriller callmaker.</reportString>
+  </JobDef>
+
+</JobDefs>

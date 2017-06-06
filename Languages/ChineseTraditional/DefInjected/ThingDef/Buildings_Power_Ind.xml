@@ -5,17 +5,20 @@
   <Ind_IndustrialCable.description>一組加固且防火的、用於傳輸電力的電纜。可以安裝於牆體和其他建築之下。</Ind_IndustrialCable.description>
   <Ind_IndustrialCable_Blueprint.label>工業電纜（藍圖）</Ind_IndustrialCable_Blueprint.label>
   <Ind_IndustrialCable_Frame.label>工業電纜（建造中）</Ind_IndustrialCable_Frame.label>
+  <Ind_IndustrialCable_Frame.description>一組加固且防火的、用於傳輸電力的電纜。可以安裝於牆體和其他建築之下。</Ind_IndustrialCable_Frame.description>
 
   <Ind_IndustrialBattery.label>工業蓄電池</Ind_IndustrialBattery.label>
   <Ind_IndustrialBattery.description>穩定可靠的工業蓄電池，比普通的蓄電池效率更高。採用更安全的設計，從而不會著火或短路。</Ind_IndustrialBattery.description>
   <Ind_IndustrialBattery_Blueprint.label>工業蓄電池（藍圖）</Ind_IndustrialBattery_Blueprint.label>
   <Ind_IndustrialBattery_Blueprint_Install.label>工業蓄電池（藍圖）</Ind_IndustrialBattery_Blueprint_Install.label>
   <Ind_IndustrialBattery_Frame.label>工業蓄電池（建造中）</Ind_IndustrialBattery_Frame.label>
+  <Ind_IndustrialBattery_Frame.description>穩定可靠的工業蓄電池，比普通的蓄電池效率更高。採用更安全的設計，從而不會著火或短路。</Ind_IndustrialBattery_Frame.description>
 
   <Ind_NuclearPowerPlant.label>核電站</Ind_NuclearPowerPlant.label>
   <Ind_NuclearPowerPlant.description>小型核電站，電力輸出20kW。使用鈾作為燃料。</Ind_NuclearPowerPlant.description>
   <Ind_NuclearPowerPlant_Blueprint.label>核電站（藍圖）</Ind_NuclearPowerPlant_Blueprint.label>
   <Ind_NuclearPowerPlant_Frame.label>核電站（建造中）</Ind_NuclearPowerPlant_Frame.label>
+  <Ind_NuclearPowerPlant_Frame.description>小型核電站，電力輸出20kW。使用鈾作為燃料。</Ind_NuclearPowerPlant_Frame.description>
 
 
 </LanguageData>

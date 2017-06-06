@@ -1,0 +1,38 @@
+Adds some heavy industries to the game.
+
+Original Author: eatKenny  
+Current Maintainer: duduluu  
+
+[h1][b]Compatible with existing save and other mods, enjoy it.[/b][/h1]
+
+[h1][b]How to build a deep mine:[/b][/h1]
+ 1. Buy a 'skydriller callmaker'
+ 2. Install and active it
+ 3. Wait for the plasma beam to make a 'mine hole'
+ 4. Build a 'deep mine' on the mine hole
+
+[h1][b]New stuff:[/b][/h1]
+ - concrete  
+ - high-grade steel  
+ - copper  
+ - aluminium
+
+[h1][b]New bench:[/b][/h1]
+ - concrete mixer
+ - electric arc furnace
+ - deep mine
+
+[h1][b]New power building:[/b][/h1]
+ - industrial cable
+ - industrial battery
+ - nuclear power plant
+
+[h1][b]New trader ship:[/b][/h1]
+ - deep space mining ship
+
+[h1][b]License[/b][/h1]
+ - Source code: MIT License https://opensource.org/licenses/MIT
+ - Artwork: CC BY-SA 4.0 http://creativecommons.org/licenses/by-sa/4.0/
+
+[h1][b]Non-steam and old version download[/b][/h1]
+https://github.com/RimWorld-zh/eatKenny-Industrialisation/releases

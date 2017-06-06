@@ -34,6 +34,7 @@
   <Ind_MakeHighGradeSteelEAF.description>使用電弧爐將鋼鐵加工成高級鋼。</Ind_MakeHighGradeSteelEAF.description>
   <Ind_MakeHighGradeSteelEAF.jobString>正在將鋼鐵加工成高級鋼</Ind_MakeHighGradeSteelEAF.jobString>
 
+
   <!-- Deep Mine Metal -->
 
   <Ind_DeepMineSteel.label>開採鋼鐵</Ind_DeepMineSteel.label>

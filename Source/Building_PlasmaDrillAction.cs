@@ -21,9 +21,9 @@ namespace Industrialisation
         private static readonly SoundDef PlasmaDrill = SoundDef.Named("Ind_PlasmaDrill");
         private static readonly SoundDef PlasmaDrillFire = SoundDef.Named("Ind_PlasmaDrillFire");
 
-        public override void SpawnSetup(Map map)
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
-            base.SpawnSetup(map);
+            base.SpawnSetup(map, respawningAfterLoad);
             this.drilltickAmountToGen = this.randomDrillticks();
             this.drillticksRemaining = this.drilltickAmountToGen;
         }

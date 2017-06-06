@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ind_SkyDriller_Calling>天钻：呼叫中。</Ind_SkyDriller_Calling>
+  <Ind_SkyDriller_StartDrilling>天钻：开始钻探。</Ind_SkyDriller_StartDrilling>
+  <Ind_SkyDriller_Completed>天钻：钻探完毕。</Ind_SkyDriller_Completed>
+  <Ind_MustPlaceOnMiningHole>必须放置于矿洞之上。</Ind_MustPlaceOnMiningHole>
+
+</LanguageData>

@@ -35,7 +35,7 @@ namespace Industrialisation
          
         public Skydriller_PlasmaBeam(Map map) : base(map)
         {
-            this.duration = 14;
+            this.duration = 16;
         }
 
         public Skydriller_PlasmaBeam(Map map, IntVec3 forcedStrikeLoc) : this(map)

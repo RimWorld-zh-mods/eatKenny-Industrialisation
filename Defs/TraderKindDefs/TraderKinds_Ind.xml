@@ -72,12 +72,16 @@
           <max>30</max>
         </countRange>
       </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>Ind_SkyDriller</thingDef>
+      <li Class="StockGenerator_Tag" ListIndex="16">
         <countRange>
-          <min>1</min>
+          <min>0</min>
           <max>1</max>
         </countRange>
+        <tradeTag>Ind_Skydriller</tradeTag>
+        <thingDefCountRange>
+          <min>0</min>
+          <max>1</max>
+        </thingDefCountRange>
       </li>
     </stockGenerators>
   </TraderKindDef>

@@ -3,29 +3,29 @@
 
   <!-- Make Concrete -->
 
-  <Ind_MakeConcreteFromAny.label>使用岩石堆生产混凝土</Ind_MakeConcreteFromAny.label>
-  <Ind_MakeConcreteFromAny.description>将岩石堆转化成混凝土。</Ind_MakeConcreteFromAny.description>
-  <Ind_MakeConcreteFromAny.jobString>正在将岩石堆转化成混凝土。</Ind_MakeConcreteFromAny.jobString>
+  <Ind_MakeConcreteFromAny.label>使用岩石块生产混凝土</Ind_MakeConcreteFromAny.label>
+  <Ind_MakeConcreteFromAny.description>将岩石块转化成混凝土。</Ind_MakeConcreteFromAny.description>
+  <Ind_MakeConcreteFromAny.jobString>正在将岩石块转化成混凝土。</Ind_MakeConcreteFromAny.jobString>
 
-  <Ind_MakeConcreteFromSandstone.label>使用砂岩堆生产混凝土</Ind_MakeConcreteFromSandstone.label>
-  <Ind_MakeConcreteFromSandstone.description>将岩石堆转化成混凝土。</Ind_MakeConcreteFromSandstone.description>
-  <Ind_MakeConcreteFromSandstone.jobString>正在将岩石堆转化成混凝土。</Ind_MakeConcreteFromSandstone.jobString>
+  <Ind_MakeConcreteFromSandstone.label>使用砂岩块生产混凝土</Ind_MakeConcreteFromSandstone.label>
+  <Ind_MakeConcreteFromSandstone.description>将岩石块转化成混凝土。</Ind_MakeConcreteFromSandstone.description>
+  <Ind_MakeConcreteFromSandstone.jobString>正在将岩石块转化成混凝土。</Ind_MakeConcreteFromSandstone.jobString>
 
-  <Ind_MakeConcreteFromGranite.label>使用花岗岩堆生产混凝土</Ind_MakeConcreteFromGranite.label>
-  <Ind_MakeConcreteFromGranite.description>将岩石堆转化成混凝土。</Ind_MakeConcreteFromGranite.description>
-  <Ind_MakeConcreteFromGranite.jobString>正在将岩石堆转化成混凝土。</Ind_MakeConcreteFromGranite.jobString>
+  <Ind_MakeConcreteFromGranite.label>使用花岗岩块生产混凝土</Ind_MakeConcreteFromGranite.label>
+  <Ind_MakeConcreteFromGranite.description>将岩石块转化成混凝土。</Ind_MakeConcreteFromGranite.description>
+  <Ind_MakeConcreteFromGranite.jobString>正在将岩石块转化成混凝土。</Ind_MakeConcreteFromGranite.jobString>
 
-  <Ind_MakeConcreteFromLimestone.label>使用石灰岩堆生产混凝土</Ind_MakeConcreteFromLimestone.label>
-  <Ind_MakeConcreteFromLimestone.description>将岩石堆转化成混凝土。</Ind_MakeConcreteFromLimestone.description>
-  <Ind_MakeConcreteFromLimestone.jobString>正在将岩石堆转化成混凝土。</Ind_MakeConcreteFromLimestone.jobString>
+  <Ind_MakeConcreteFromLimestone.label>使用石灰岩块生产混凝土</Ind_MakeConcreteFromLimestone.label>
+  <Ind_MakeConcreteFromLimestone.description>将岩石块转化成混凝土。</Ind_MakeConcreteFromLimestone.description>
+  <Ind_MakeConcreteFromLimestone.jobString>正在将岩石块转化成混凝土。</Ind_MakeConcreteFromLimestone.jobString>
 
-  <Ind_MakeConcreteFromSlate.label>使用板岩堆生产混凝土</Ind_MakeConcreteFromSlate.label>
-  <Ind_MakeConcreteFromSlate.description>将岩石堆转化成混凝土。</Ind_MakeConcreteFromSlate.description>
-  <Ind_MakeConcreteFromSlate.jobString>正在将岩石堆转化成混凝土。</Ind_MakeConcreteFromSlate.jobString>
+  <Ind_MakeConcreteFromSlate.label>使用板岩块生产混凝土</Ind_MakeConcreteFromSlate.label>
+  <Ind_MakeConcreteFromSlate.description>将岩石块转化成混凝土。</Ind_MakeConcreteFromSlate.description>
+  <Ind_MakeConcreteFromSlate.jobString>正在将岩石块转化成混凝土。</Ind_MakeConcreteFromSlate.jobString>
 
-  <Ind_MakeConcreteFromMarble.label>使用大理石堆生产混凝土</Ind_MakeConcreteFromMarble.label>
-  <Ind_MakeConcreteFromMarble.description>将岩石堆转化成混凝土。</Ind_MakeConcreteFromMarble.description>
-  <Ind_MakeConcreteFromMarble.jobString>正在将岩石堆转化成混凝土。</Ind_MakeConcreteFromMarble.jobString>
+  <Ind_MakeConcreteFromMarble.label>使用大理石块生产混凝土</Ind_MakeConcreteFromMarble.label>
+  <Ind_MakeConcreteFromMarble.description>将岩石块转化成混凝土。</Ind_MakeConcreteFromMarble.description>
+  <Ind_MakeConcreteFromMarble.jobString>正在将岩石块转化成混凝土。</Ind_MakeConcreteFromMarble.jobString>
 
 
   <!-- Electric Arc Furnace -->
@@ -33,6 +33,7 @@
   <Ind_MakeHighGradeSteelEAF.label>生产高级钢</Ind_MakeHighGradeSteelEAF.label>
   <Ind_MakeHighGradeSteelEAF.description>使用电弧炉将钢铁加工成高级钢。</Ind_MakeHighGradeSteelEAF.description>
   <Ind_MakeHighGradeSteelEAF.jobString>正在将钢铁加工成高级钢</Ind_MakeHighGradeSteelEAF.jobString>
+
 
   <!-- Deep Mine Metal -->
 
@@ -71,24 +72,24 @@
   <Ind_DeepMineJade.description>开采翡翠。</Ind_DeepMineJade.description>
   <Ind_DeepMineJade.jobString>正在用深矿开采矿物。</Ind_DeepMineJade.jobString>
 
-  <Ind_DeepMineChunkSandstone.label>开采砂岩堆</Ind_DeepMineChunkSandstone.label>
-  <Ind_DeepMineChunkSandstone.description>开采砂岩堆。</Ind_DeepMineChunkSandstone.description>
+  <Ind_DeepMineChunkSandstone.label>开采砂岩块</Ind_DeepMineChunkSandstone.label>
+  <Ind_DeepMineChunkSandstone.description>开采砂岩块。</Ind_DeepMineChunkSandstone.description>
   <Ind_DeepMineChunkSandstone.jobString>正在用深矿开采矿物。</Ind_DeepMineChunkSandstone.jobString>
 
-  <Ind_DeepMineChunkGranite.label>开采花岗岩堆</Ind_DeepMineChunkGranite.label>
-  <Ind_DeepMineChunkGranite.description>开采花岗岩堆。</Ind_DeepMineChunkGranite.description>
+  <Ind_DeepMineChunkGranite.label>开采花岗岩块</Ind_DeepMineChunkGranite.label>
+  <Ind_DeepMineChunkGranite.description>开采花岗岩块。</Ind_DeepMineChunkGranite.description>
   <Ind_DeepMineChunkGranite.jobString>正在用深矿开采矿物。</Ind_DeepMineChunkGranite.jobString>
 
-  <Ind_DeepMineChunkLimestone.label>开采石灰岩堆</Ind_DeepMineChunkLimestone.label>
-  <Ind_DeepMineChunkLimestone.description>开采石灰岩堆。</Ind_DeepMineChunkLimestone.description>
+  <Ind_DeepMineChunkLimestone.label>开采石灰岩块</Ind_DeepMineChunkLimestone.label>
+  <Ind_DeepMineChunkLimestone.description>开采石灰岩块。</Ind_DeepMineChunkLimestone.description>
   <Ind_DeepMineChunkLimestone.jobString>正在用深矿开采矿物。</Ind_DeepMineChunkLimestone.jobString>
 
-  <Ind_DeepMineChunkSlate.label>开采板岩堆</Ind_DeepMineChunkSlate.label>
-  <Ind_DeepMineChunkSlate.description>开采板岩堆。</Ind_DeepMineChunkSlate.description>
+  <Ind_DeepMineChunkSlate.label>开采板岩块</Ind_DeepMineChunkSlate.label>
+  <Ind_DeepMineChunkSlate.description>开采板岩块。</Ind_DeepMineChunkSlate.description>
   <Ind_DeepMineChunkSlate.jobString>正在用深矿开采矿物。</Ind_DeepMineChunkSlate.jobString>
 
-  <Ind_DeepMineChunkMarble.label>开采大理石堆</Ind_DeepMineChunkMarble.label>
-  <Ind_DeepMineChunkMarble.description>开采大理石堆。</Ind_DeepMineChunkMarble.description>
+  <Ind_DeepMineChunkMarble.label>开采大理石块</Ind_DeepMineChunkMarble.label>
+  <Ind_DeepMineChunkMarble.description>开采大理石块。</Ind_DeepMineChunkMarble.description>
   <Ind_DeepMineChunkMarble.jobString>正在用深矿开采矿物。</Ind_DeepMineChunkMarble.jobString>
 
 

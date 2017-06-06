@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef>
+    <defName>Ind_SkydrillerCallmaker</defName>
+    <label>skydriller callmaker</label>
+    <description>Skydriller is a low orbit plasma driller, use the callmaker to call a plasma drilling, it will creat a mining hole. NOTE: sky driller can't drill through mountain.</description>
+    <statBases>
+      <Beauty>-8</Beauty>
+      <Flammability>1.0</Flammability>
+      <MarketValue>3500</MarketValue>
+      <Mass>10</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+      <SellPriceFactor>0.70</SellPriceFactor>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>25</pathCost>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <size>(3,3)</size>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>Ind_ActiveSkydrillerCallmaker</useJob>
+        <useLabel>Active skydriller callmaker</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>Industrialisation.CompUseEffect_ActiveSkydrillerCallmaker</compClass>
+      </li>
+    </comps>
+    <minifiedDef>Ind_MinifiedSkydrillerCallmaker</minifiedDef>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <graphicData>
+      <texPath>Ind/SkyDriller/SkydrillerCallmaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.25, 0.5, 0.25)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <fillPercent>0.30</fillPercent>
+    <tradeTags>
+      <li>Ind_Skydrller</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Ind_MinifiedSkydrillerCallmaker</defName>
+    <label>skydriller callmaker</label>
+    <pathCost>15</pathCost>
+    <altitudeLayer>Item</altitudeLayer>
+    <thingClass>MinifiedThing</thingClass>
+    <category>Item</category>
+    <rotatable>false</rotatable>
+    <useHitPoints>true</useHitPoints>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <drawerType>RealtimeOnly</drawerType>
+    <selectable>true</selectable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Ind_SkydrillerCallmaker_Calling</defName>
+    <label>skydriller callmaker</label>
+    <description>Skydriller is a low orbit plasma driller, use the callmaker to call a plasma drilling, it will creat a mining hole. NOTE: sky driller can't drill through mountain.</description>
+    <statBases>
+      <Beauty>-8</Beauty>
+      <Flammability>1.0</Flammability>
+      <MarketValue>3500</MarketValue>
+      <Mass>10</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <pathCost>100</pathCost>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <thingClass>Industrialisation.Building_SkydrillerCallmaker_Calling</thingClass>
+    <category>Building</category>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(255,238,88,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>3600</lifespanTicks>
+      </li>
+    </comps>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <graphicData>
+      <texPath>Ind/SkyDriller/SkydrillerCallmaker_Calling</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(0.25, 0.5, 0.25)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <fillPercent>0.30</fillPercent>
+    <building>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+    </building>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Ind_SkydrillerCallmaker_Drilling</defName>
+    <label>plasma drill in action</label>
+    <statBases>
+      <Beauty>-8</Beauty>
+      <Flammability>0</Flammability>
+      <MarketValue>3500</MarketValue>
+    </statBases>
+    <pathCost>100</pathCost>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <altitudeLayer>Building</altitudeLayer>
+    <thingClass>Industrialisation.Building_SkydrillerCallmaker_Drilling</thingClass>
+    <category>Building</category>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>7200</lifespanTicks>
+      </li>
+    </comps>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Ind/SkyDriller/SkydrillerCallmaker_Drilling</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <selectable>false</selectable>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <fillPercent>0.30</fillPercent>
+    <!--<building>
+      <soundAmbient>Ind_PlasmaDrill</soundAmbient>
+    </building>-->
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>Ind_MiningHole</defName>
+    <label>mining hole</label>
+    <description>A mining hole.</description>
+    <thingClass>Thing</thingClass>
+    <category>Ethereal</category>
+    <graphicData>
+      <texPath>Ind/SkyDriller/MineHole</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Floor</altitudeLayer>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Never</tickerType>
+    <selectable>true</selectable>
+    <size>(3,3)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Ind_SkydrillerCallmaker.label>天鑽呼叫器</Ind_SkydrillerCallmaker.label>
+  <Ind_SkydrillerCallmaker.description>天鑽是一種低空軌道等離子鑽機，使用呼叫器來呼叫一次等離子鑽探，會製造一個礦洞。注意：天鑽無法穿過山體。</Ind_SkydrillerCallmaker.description>
+  <Ind_SkydrillerCallmaker.comps.0.useLabel>激活天鑽呼叫器</Ind_SkydrillerCallmaker.comps.0.useLabel>
+  <Ind_SkydrillerCallmaker_Blueprint_Install.label>激活天鑽呼叫器（藍圖）</Ind_SkydrillerCallmaker_Blueprint_Install.label>
+
+  <Ind_MinifiedSkydrillerCallmaker.label>激活天鑽呼叫器</Ind_MinifiedSkydrillerCallmaker.label>
+
+  <Ind_SkydrillerCallmaker_Calling.label>激活天鑽呼叫器</Ind_SkydrillerCallmaker_Calling.label>
+  <Ind_SkydrillerCallmaker_Calling.description>天鑽是一種低空軌道等離子鑽機，使用呼叫器來呼叫一次等離子鑽探，會製造一個礦洞。注意：天鑽無法穿過山體。</Ind_SkydrillerCallmaker_Calling.description>
+
+  <Ind_SkydrillerCallmaker_Drilling.label>作業中的等離子鑽</Ind_SkydrillerCallmaker_Drilling.label>
+
+  <Ind_MiningHole.label>礦洞</Ind_MiningHole.label>
+  <Ind_MiningHole.description>礦洞。</Ind_MiningHole.description>
+
+
+</LanguageData>

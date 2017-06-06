@@ -77,7 +77,7 @@
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <MarketValue>4.9</MarketValue>
-      <Mass>4</Mass>
+      <Mass>1</Mass>
       <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
       <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
     </statBases>
@@ -87,6 +87,7 @@
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <stuffAdjective>concrete</stuffAdjective>
+      <appearance>Planks</appearance>
       <statOffsets>
         <WorkToBuild>140</WorkToBuild>
 				<Beauty>0</Beauty>
@@ -94,9 +95,9 @@
       <statFactors>
         <Beauty>1</Beauty>  
         <MarketValue>0.45</MarketValue>
-        <MaxHitPoints>2.3</MaxHitPoints>
-				<WorkToBuild>1.7</WorkToBuild>
-				<WorkToMake>1.7</WorkToMake>
+        <MaxHitPoints>1.55</MaxHitPoints>
+				<WorkToBuild>2.0</WorkToBuild>
+				<WorkToMake>1.2</WorkToMake>
       </statFactors>
     </stuffProps>
   </ThingDef>

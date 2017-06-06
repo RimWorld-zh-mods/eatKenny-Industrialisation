@@ -2,37 +2,42 @@
 <ModMetaData>
 	<name>Industrialisation</name>
 	<author>eatKenny, duduluu</author>
-	<targetVersion>0.16.1393</targetVersion>
+	<url>http://rimworld-zh.com/</url>
+	<targetVersion>0.17.1557</targetVersion>
 	<description>Adds some heavy industries to the game.
 
 Original Author: eatKenny  
 Current Maintainer: duduluu  
 
-# Features
+&lt;color=#ffee58&gt;&lt;b&gt;Compatible with existing save and other mods, enjoy it.&lt;/b&gt;&lt;/color&gt;
 
-New stuff:  
+&lt;color=#ffee58&gt;&lt;b&gt;How to build a deep mine:&lt;/b&gt;&lt;/color&gt;
+ 1. Buy a 'skydriller callmaker'
+ 2. Install and active it
+ 3. Wait for the plasma beam to make a 'mine hole'
+ 4. Build a 'deep mine' on the mine hole
+
+&lt;color=#ffee58&gt;&lt;b&gt;New stuff:&lt;/b&gt;&lt;/color&gt;
  - concrete  
  - high-grade steel  
  - copper  
  - aluminium
 
-New bench:
+&lt;color=#ffee58&gt;&lt;b&gt;New bench:&lt;/b&gt;&lt;/color&gt;
  - concrete mixer
  - electric arc furnace
- - deep mine
+ - deep mine (require research: deep drilling)
 
-New power building:  
+&lt;color=#ffee58&gt;&lt;b&gt;New power building:&lt;/b&gt;&lt;/color&gt;
  - industrial cable
  - industrial battery
  - nuclear power plant
 
-New trader ship:
+&lt;color=#ffee58&gt;&lt;b&gt;New trader ship:&lt;/b&gt;&lt;/color&gt;
  - deep space mining ship
 
-Tips: To build a deep mine, you must buy a Skydriller to create a mine hole.  
-(The Skydriller looks like a walkie-talkie, just use it like a grenade - hit the grand, than the plasma beam will make a mine hole.)
-
-# License
-
-Industrialisation mod is distributed under the [MIT License](https://opensource.org/licenses/MIT).</description>
+&lt;color=#ffee58&gt;&lt;b&gt;License&lt;/b&gt;&lt;/color&gt;
+ - Source code: MIT License https://opensource.org/licenses/MIT
+ - Artwork: CC BY-SA 4.0 http://creativecommons.org/licenses/by-sa/4.0/
+</description>
 </ModMetaData>

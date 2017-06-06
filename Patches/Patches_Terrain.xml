@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/TerrainDefs/TerrainDef[defName = "Concrete"]/CostList</xpath>
+    <value>
+        <costList>
+          <Ind_Concrete>5</Ind_Concrete>
+        </costList>
+    </value>
+  </Operation>
+
+</Patch>
